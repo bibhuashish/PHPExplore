@@ -140,6 +140,80 @@ echo "<br />"
 <?php
 echo "<br />"
 ?>
+<pre>
+<?php
+$numbers=array(23,54,56,72,3,4,5,6,7,100,998);
+sort($numbers);
+print_r($numbers);
+rsort($numbers);
+print_r($numbers);
+?>
+</pre>
+
+<?php
+echo "<br/>"
+?>
+<?php echo $num_string=implode("*", $numbers);?><br/>
+<?php print_r(explode("*", $num_string));?><br/>
+
+<?php echo in_array(100, $numbers);?><br/>
+<?php echo in_array(98, $numbers);?><br/>
+
+<?php
+//Below section is for Booleans
+?>
+
+<?php
+    echo $result1=true;
+    echo $result2=false;
+?>
+<?php
+    echo is_bool($result2);
+?>
+<?php
+$number=6.28;
+If(is_float($number))
+{
+    echo "The number is a float";
+}
+?>
+<?php
+//Below section describes abput NULL
+?>
+<?php
+$numb_test=array(23,54,56,72,3,4,5,6,7,100,998);
+(string)numb_test;
+echo gettype($numb_test);
+?>
+<?php
+    $new_user=TRUE;
+    if(is_bool($new_user)){
+        echo "<h1> Welcome for the first time</h1><br/>";
+        echo "<h2> Be my guest :)</h2><br/>";
+    }
+?>
+<?php
+    $a=4;
+    Switch($a)
+    {
+        Case 4:
+        echo "a is 4<br/>";
+        break;
+        Case 1:
+            echo "a is 1<br/>";
+            break;
+        Case 2:
+            echo "a is 2<br/>";
+            break;
+        Case 3:
+            echo "a is 3<br/>";
+            break;
+        Default:
+            echo "Can not find a<br/>";
+            break;
+    }
+?>
+
 
 </body>
 </html>
