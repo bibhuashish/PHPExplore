@@ -4,7 +4,7 @@ $name = 'Arthur Dent';
 switch ($name) {
     case 'Arthur Dent':
         echo 'I could never get the hang of Thursdays.';
-        //break;
+        break;
     case 'Marvin':
     case 'Paranoid Android':
     case 'robot':

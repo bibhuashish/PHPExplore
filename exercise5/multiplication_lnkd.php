@@ -8,10 +8,10 @@
 <body>
 <h1>Multiplication Table</h1>
 <table>
-    // Create first row of table headers
     <?php
     echo '<tr>';
     echo '<th>&nbsp;</th>';
+        // Create first row of table headers
     for ($col = 1; $col <= 12; $col++) :
         echo "<th>$col</th>";
     endfor;
